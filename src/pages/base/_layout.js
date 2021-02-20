@@ -1,11 +1,10 @@
 import React from 'react'
+import ProCard from '@ant-design/pro-card';
 
 export default function(props) {
   return (
-    <div>
-      wrap start
+    <ProCard >
       {props.children}
-      wrap end
-    </div>
+    </ProCard>
   )
 }
