@@ -17,7 +17,7 @@ class Form extends UmiComp {
     return (
       <>
         <h1>result{this.props.a}</h1>
-        <Row justify={"space-around"} type={"flex"}>
+        <Row justify={"space-around"} >
           <Col>
             <Button type={'primary'} size={'large'} onClick={this.calA(1)}>+1</Button>
           </Col>

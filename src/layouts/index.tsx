@@ -14,7 +14,7 @@ const menuData: MenuDataItem[] = [
 
 const BasicLayout: React.FC = props => {
   const location = window.location;
-  const [path, setPath] = React.useState(location.pathname);
+  const [path, setPath] = React.useState<string | undefined>(location.pathname);
   return (
     <ProLayout
       logo={<img src={'https://flink.apache.org/img/flink-header-logo.svg'}/>}
