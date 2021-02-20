@@ -1,9 +1,9 @@
 import React from 'react'
 import ProCard from '@ant-design/pro-card';
 
-export default function(props) {
+export default function(props:any) {
   return (
-    <ProCard >
+    <ProCard>
       {props.children}
     </ProCard>
   )
