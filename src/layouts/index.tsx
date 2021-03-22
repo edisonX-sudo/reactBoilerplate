@@ -7,22 +7,20 @@ import Link from 'umi/link';
 import { MenuDataItem } from '@ant-design/pro-layout/lib/typings';
 
 const menuData: MenuDataItem[] = [
-  { path: '/', name: 'm1', icon: <LikeOutlined /> },
-  { path: '/base/form', name: 'm2', icon: <UserOutlined /> },
-  { path: '/base/inner', name: 'm3', icon: <UserOutlined /> },
+  { path: '/', name: '主页', icon: <UserOutlined /> },
 ];
 
 const BasicLayout: React.FC = props => {
   const location = window.location;
   const [path, setPath] = React.useState<string | undefined>(location.pathname);
   return (
+
     <ProLayout
-      logo={<img src={'https://flink.apache.org/img/flink-header-logo.svg'}/>}
+      logo={<img src={require('@/assets/networking.svg')} />}
       layout={'top'}
       navTheme={'light'}
-      title={'see_see_title'}
+      title={'XSK_HOME'}
       menuItemRender={(menuItemProps, defaultDom) => {
-        console.log(menuItemProps, defaultDom, location);
         if (menuItemProps.isUrl || menuItemProps.children) {
           return defaultDom;
         }
