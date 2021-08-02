@@ -7,7 +7,7 @@ import Link from 'umi/link';
 import { MenuDataItem } from '@ant-design/pro-layout/lib/typings';
 
 const menuData: MenuDataItem[] = [
-  { path: '/', name: '主页', icon: <UserOutlined /> },
+  { path: '/', name: 'Home', icon: <UserOutlined /> },
 ];
 
 const BasicLayout: React.FC = props => {
@@ -19,7 +19,7 @@ const BasicLayout: React.FC = props => {
       logo={<img src={require('@/assets/networking.svg')} />}
       layout={'top'}
       navTheme={'light'}
-      title={'XSK_HOME'}
+      title={'XskSiteIndex'}
       menuItemRender={(menuItemProps, defaultDom) => {
         if (menuItemProps.isUrl || menuItemProps.children) {
           return defaultDom;
