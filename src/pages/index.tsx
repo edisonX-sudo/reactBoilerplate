@@ -29,7 +29,7 @@ class Home extends Component<any, any> {
 
   jump2Site = (url: string) => {
     const w = window.open('about:blank');
-    w.location.href = url;
+    w && (w.location.href = url);
   };
 
 
